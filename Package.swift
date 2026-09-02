@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "FPHISelphidDocumentReaderBundle-SPM",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -15,7 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/facephi-clienters/FPHIRecognitionHelper-SPM.git", .upToNextMajor(from: "6.1.6")),
-        .package(url: "https://github.com/facephi-clienters/FPHISelphidDocumentReader-SPM.git", .exactItem("3.1.2")),
+        .package(url: "https://github.com/facephi-clienters/FPHISelphidDocumentReader-SPM.git", .exactItem("3.1.3")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
