@@ -18,7 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/facephi-clienters/FPHIRecognitionHelper-SPM.git", .upToNextMinor(from: "6.1.9")),
-        .package(url: "https://github.com/facephi-clienters/FPHISelphidDocumentReader-SPM.git", .exactItem("3.3.10")),
+        .package(url: "https://github.com/facephi-clienters/FPHISelphidDocumentReader-SPM.git", .exactItem("3.5.1")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -34,7 +34,7 @@ let package = Package(
                 )
             ]
         ),
-        .binaryTarget(name: "selphidDocumentReaderBundle", url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/DocumentReader/FPHISelphidDocumentReaderBundle/3.3.10/selphidDocumentReaderBundle.zip",
-            checksum: "63422614425ecc6100cb959fecbd75471d3d179c555425c8f5dcc609d2e131f7") 
+        .binaryTarget(name: "selphidDocumentReaderBundle", url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/WIDGET/DocumentReader/FPHISelphidDocumentReaderBundle/3.5.1/selphidDocumentReaderBundle.zip",
+            checksum: "3ee1e4cbebf49383184f10f00e4335b7b9ca32974cedf766dc15de2eb446873d") 
     ]
 )
